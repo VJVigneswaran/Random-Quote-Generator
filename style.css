@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#quote-box {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 4.5rem;
+}
+.quote {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: gold;
+}
+.quote::before {
+  content: '"';
+}
+.quote::after {
+  content: '"';
+}
+.source {
+  color: grey;
+  font-size: 3.6rem;
+  text-align: right;
+  text-shadow: 10px 10px 20px black;
+}
+.source::before {
+  content: "-";
+  font-size: 4rem;
+}
+.btn-box {
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+  position: fixed;
+  bottom: 0;
+}
+button {
+  background-color: gold;
+  padding: 1em;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button:active {
+  background-color: goldenrod;
+}
+
+@media (width <= 600px) {
+  #quote-box {
+    font-size: 2.5rem;
+    width: 100%;
+  }
+  .source {
+    font-size: 1.8rem;
+  }
+  button {
+    font-size: 1.2rem;
+  }
+}
